@@ -36,7 +36,6 @@ service lhd /system/bin/lhd /system/etc/lhd.conf
     class late_start
     user gps
     group system wakelock inet net_raw
-    seclabel u:r:lhd:s0
 
 # GPS
 service gpsd /system/bin/gpsd -c /system/etc/gps.xml
