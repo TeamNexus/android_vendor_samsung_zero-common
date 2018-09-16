@@ -38,7 +38,7 @@ service lhd /system/bin/lhd /system/etc/lhd.conf
     group system wakelock inet net_raw
 
 # GPS
-service gpsd /system/bin/gpsd -c /system/etc/gps.xml
+service gpsd /vendor/bin/gpsd -c /vendor/etc/gnss/gps.xml
     class main
     user gps
     group system wakelock inet net_raw
