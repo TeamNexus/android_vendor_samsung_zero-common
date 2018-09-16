@@ -32,7 +32,7 @@ on post-fs-data
 	chown system system /data/system/gps/secgps.conf
 
 # SensorHub (Location Hub)
-service lhd /system/bin/lhd /system/etc/lhd.conf
+service lhd /vendor/bin/lhd /vendor/etc/lhd.conf
     class late_start
     user gps
     group system wakelock inet net_raw
